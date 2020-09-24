@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addstudentback"
+    tools:context=".AddTpo">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/tpoName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:hint="TPO Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tpoID"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="190dp"
+        android:ems="10"
+        android:hint="TPO ID"
+        android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="511dp"
+                android:layout_marginTop="520dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="loadTpo"
+        android:text="Display"
+         />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="addTpo"
+        android:text="Insert"
+         />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="deleteTpo"
+        android:text="Delete"
+         />
+
+    <Button
+        android:id="@+id/btnfind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="findTpo"
+        android:text="Search"
+         />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="updateTpo"
+        android:text="Update"
+        /></RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

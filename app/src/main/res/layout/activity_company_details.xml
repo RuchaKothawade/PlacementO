@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image1"
+    tools:context=".CompanyDetails">
+
+    <EditText
+        android:id="@+id/cName"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cID"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:hint="Company ID"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_marginTop="550dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/cus_main_button"
+        android:text="Display" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cus_main_button"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="320dp"
+        android:onClick="addStudent"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="deleteStudent"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btnfind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="findStudent"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="updateStudent"
+        android:text="Update" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:hint=" Company Date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:hint="CGPA Cutoff"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/ssal"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/custom_button"
+        android:ems="10"
+        android:hint="Salary Offered"
+        android:inputType="textEmailAddress" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gd"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="IamAdmin"
+        android:text="Admin"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/student"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="IamStudent"
+        android:text="Student"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/tpo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/cus_main_button"
+        android:onClick="IamTpo"
+        android:text="TPO"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+

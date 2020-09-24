@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addstudentback"
+    tools:context=".AddStudent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/studentName"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/studentID"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="100dp"
+
+                android:ems="10"
+                android:hint="Rollno"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="588dp"
+                android:layout_marginTop="650dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnload"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="false"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="520dp"
+                android:background="@drawable/cus_main_button"
+                android:onClick="loadStudents"
+                android:text="Display"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/cus_main_button"
+                android:onClick="addStudent"
+                android:text="Insert"
+                android:textSize="18sp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btndelete"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/cus_main_button"
+                android:onClick="deleteStudent"
+                android:text="Delete"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnfind"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="460dp"
+                android:background="@drawable/cus_main_button"
+                android:onClick="findStudent"
+                android:text="Search"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="460dp"
+                android:background="@drawable/cus_main_button"
+                android:onClick="updateStudent"
+                android:text="Update"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/sbranch"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp"
+                android:ems="10"
+                android:hint="Branch"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/scgpa"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:ems="10"
+                android:hint="CGPA"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/semail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="320dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
